@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 const Rpg = (props) => {
 
-    let gameElement = props.gamesList.game.map(g => <GameCard name={g.name} id={g.id} avatar={g.avatar}
+    let gameElement = props.gamesList.rpg.map(g => <GameCard name={g.name} id={g.id} avatar={g.avatar}
                                                                     text={g.text}/>);
     return (
 

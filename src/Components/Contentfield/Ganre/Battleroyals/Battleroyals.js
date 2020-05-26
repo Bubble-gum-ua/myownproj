@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 
 const Battleroyals = (props) => {
-    let gameElement = props.gamesList.game.map(g => <GameCard name={g.name} id={g.id} avatar={g.avatar}
+    let gameElement = props.gamesList.battleroyal.map(g => <GameCard name={g.name} id={g.id} avatar={g.avatar}
                                                               text={g.text}/>);
 
     return (

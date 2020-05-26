@@ -5,7 +5,7 @@ import s from "./Headbar.module.css";
 const HeadBar = () => {
     return (
         <div className={s.mainstyle}>
-            <img src="https://data1.origin.com/content/dam/originx/web/app/programs/About/aboutorigin_3840x2160_SWB.jpg"/>
+            <img src="https://assets.4game.com/frontend/frontend/mmo_covers/1050x300/pb-ru.jpg"/>
         </div>
     )
 }

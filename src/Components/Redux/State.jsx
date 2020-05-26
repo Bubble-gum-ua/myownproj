@@ -3,12 +3,12 @@ import React from "react";
 
 let state = {
     gamesList: {
-        game: [
+        rpg: [
             {
                 id: 1,
                 name: <h1>"World Of Warcraft"</h1>,
                 avatar: <img
-                    src="https://lh3.googleusercontent.com/proxy/kvP3M-84qffuVrU-UlCQGF1MibyDo-FCrD6BMIiYEqXEVdyP6gLhAxW3ycXufd9SJwsu9hgYHn1Pdi9OMUY_5rJu2VgDp7BQjZ62aD7cKGBSbiMVkOdkKl1mCp9YTZ0y3ZDB-PKF04Jnm-Wl_kehGKMYGPY0uAM"/>,
+                    src="https://lh3.googleusercontent.com/proxy/jeBc-gs7uphHymJty6Vjobpv0sq3LdO48AX0CVAsg4HlVClYLgWc9JbM-wFQghHWmlhyrt0Zbp8lyS8pTtZoNTI9ux4_VuoxLJRX64BMv6PZjfWxH7FYRp5T3UzHa4aW59-yoO6BVI5Ku_yCt9o1L_9g3tU_tbI"/>,
                 text: <p> WoW Classic предлагает увидеть мир игры в том виде, в котором он был на момент контентного
                     обновления 1.12.1 (сентябрь 2006 года) перед выходом первого дополнения — The Burning Crusade.
                     Максимальный уровень персонажа — 60, а в игре отсутствует любое контентное обновление. В игре
@@ -36,7 +36,11 @@ let state = {
                     обновления не будут изменять механику основной игры, например, способности персонажа; баланс игры
                     будет сохраняться на том уровне, на котором он был в обновлении 1.12.1.</p>
             },
+
+        ],
+        battleroyal: [
             {
+
                 id: 2,
                 name: <h1>"Call of Duty"</h1>,
                 avatar: <img
@@ -58,6 +62,7 @@ let state = {
                     месяц.</p>
             }
         ]
+
     }
 };
 
