@@ -15,7 +15,7 @@ const Sidebar = () => {
                 <NavLink to="/author"> Author </NavLink>
             </div>
             <div>
-                <NavLink to="/country">County</NavLink>
+                <NavLink to="/country">Country</NavLink>
             </div>
             <div>
                 <NavLink to="/music">Music</NavLink>

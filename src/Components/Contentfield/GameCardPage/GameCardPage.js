@@ -13,6 +13,14 @@ const GameCard = (props) => {
             <div className={s.allstyle}>
                 {props.name} {props.avatar} {props.text}
             </div>
+            <div>
+            <div>
+                Year release: {props.year}
+            </div>
+            <div>
+                PC preferences: {props.pcpreferences}
+            </div>
+            </div>
         </div>
     )
 };

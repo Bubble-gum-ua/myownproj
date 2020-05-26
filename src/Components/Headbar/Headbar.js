@@ -5,7 +5,12 @@ import s from "./Headbar.module.css";
 const HeadBar = () => {
     return (
         <div className={s.mainstyle}>
+
             <img src="https://assets.4game.com/frontend/frontend/mmo_covers/1050x300/pb-ru.jpg"/>
+
+
+
+
         </div>
     )
 }

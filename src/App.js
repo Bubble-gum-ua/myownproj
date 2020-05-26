@@ -8,6 +8,7 @@ import HeadBar from "./Components/Headbar/Headbar";
 import Genre from "./Components/Contentfield/Ganre/GanreFile";
 import Rpg from "./Components/Contentfield/Ganre/RPG/RpgList";
 import Battleroyals from "./Components/Contentfield/Ganre/Battleroyals/Battleroyals";
+import RightBar from "./Components/Rightbar/Rightbar";
 
 
 function App(props) {
@@ -31,7 +32,7 @@ function App(props) {
                 <Route path="/ganre/Battleroyals" render={() => <Battleroyals gamesList={props.state.gamesList}/>}/>
             </div>
             <div className="mainRighbar">
-                Rightbar
+                <RightBar/>
             </div>
         </div>
     );
