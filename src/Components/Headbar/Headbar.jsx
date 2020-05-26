@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Headbar.module.css";
 
 
-const HeadBar = () => {
+const Headbar = () => {
     return (
         <div className={s.mainstyle}>
 
@@ -15,4 +15,4 @@ const HeadBar = () => {
     )
 }
 
-export default HeadBar;
+export default Headbar;

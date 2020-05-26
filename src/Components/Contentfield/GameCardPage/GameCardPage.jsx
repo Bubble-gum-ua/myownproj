@@ -4,7 +4,7 @@ import s from "./GameCard.module.css"
 
 
 const GameCard = (props) => {
-
+debugger;
 
 
 

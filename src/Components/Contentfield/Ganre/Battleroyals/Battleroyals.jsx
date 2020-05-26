@@ -1,6 +1,7 @@
 import React from "react";
-import GameCard from "../../GameCardPage/GameCardPage";
+
 import {NavLink} from "react-router-dom";
+import GameCard from "../../GameCardPage/GameCardPage";
 
 
 const Battleroyals = (props) => {

@@ -1,14 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Route} from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Classes from "./Components/Sidebar/Sidecomponents/Classes";
-import HeadBar from "./Components/Headbar/Headbar";
+import Headbar from "./Components/Headbar/Headbar";
 import Genre from "./Components/Contentfield/Ganre/GanreFile";
+
+
+import RightBar from "./Components/Rightbar/Rightbar";
+import Gamegrid from "./Components/Contentfield/GameCardPage/Maingamesgrid";
 import Rpg from "./Components/Contentfield/Ganre/RPG/RpgList";
 import Battleroyals from "./Components/Contentfield/Ganre/Battleroyals/Battleroyals";
-import RightBar from "./Components/Rightbar/Rightbar";
+import GameCard from "./Components/Contentfield/GameCardPage/GameCardPage";
 
 
 function App(props) {
@@ -16,7 +19,7 @@ function App(props) {
     return (
         <div className="mainWrapp">
             <div className="mainHead">
-                <HeadBar/>
+                <Headbar/>
             </div>
             <div className="mainSidebar">
                 <h3> Our games field</h3>
@@ -28,8 +31,12 @@ function App(props) {
             </div>
             <div className="mainBody">
                 MainBody
-                <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
+               {/* <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>*/}
+               <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
+               <Route path="/ganre/RPG/WowClassic" render={() => <GameCard gamesList={props.state.gamesList}/>}/>
+               <Route path="/ganre/RPG/WowBc" render={() => <GameCard gamesList={props.state.gamesList}/>}/>
                 <Route path="/ganre/Battleroyals" render={() => <Battleroyals gamesList={props.state.gamesList}/>}/>
+
             </div>
             <div className="mainRighbar">
                 <RightBar/>
