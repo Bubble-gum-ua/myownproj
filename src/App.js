@@ -12,6 +12,8 @@ import Gamegrid from "./Components/Contentfield/GameCardPage/Maingamesgrid";
 import Rpg from "./Components/Contentfield/Ganre/RPG/RpgList";
 import Battleroyals from "./Components/Contentfield/Ganre/Battleroyals/Battleroyals";
 import GameCard from "./Components/Contentfield/GameCardPage/GameCardPage";
+import GameCardSet from "./Components/Contentfield/GameCardPage/GameCardSet";
+
 
 
 function App(props) {
@@ -33,8 +35,8 @@ function App(props) {
                 MainBody
                {/* <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>*/}
                <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
-               <Route path="/ganre/RPG/WowClassic" render={() => <GameCard gamesList={props.state.gamesList}/>}/>
-               <Route path="/ganre/RPG/WowBc" render={() => <GameCard gamesList={props.state.gamesList}/>}/>
+               <Route path="/ganre/RPG/WowClassic" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
+               <Route path="/ganre/RPG/WowBc" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
                 <Route path="/ganre/Battleroyals" render={() => <Battleroyals gamesList={props.state.gamesList}/>}/>
 
             </div>
