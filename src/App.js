@@ -15,7 +15,6 @@ import GameCard from "./Components/Contentfield/GameCardPage/GameCardPage";
 import GameCardSet from "./Components/Contentfield/GameCardPage/GameCardSet";
 
 
-
 function App(props) {
 
     return (
@@ -33,10 +32,11 @@ function App(props) {
             </div>
             <div className="mainBody">
                 MainBody
-               {/* <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>*/}
-               <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
-               <Route path="/ganre/RPG/WowClassic" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
-               <Route path="/ganre/RPG/WowBc" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
+                {/* <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>*/}
+                <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
+                <Route path="/ganre/RPG/WowClassic"
+                       render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
+                <Route path="/ganre/RPG/WowBc" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
                 <Route path="/ganre/Battleroyals" render={() => <Battleroyals gamesList={props.state.gamesList}/>}/>
 
             </div>
