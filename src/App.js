@@ -5,17 +5,13 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Classes from "./Components/Sidebar/Sidecomponents/Classes";
 import Headbar from "./Components/Headbar/Headbar";
 import Genre from "./Components/Contentfield/Ganre/GanreFile";
-
-
 import RightBar from "./Components/Rightbar/Rightbar";
-import Gamegrid from "./Components/Contentfield/GameCardPage/Maingamesgrid";
-import Rpg from "./Components/Contentfield/Ganre/RPG/RpgList";
-import Battleroyals from "./Components/Contentfield/Ganre/Battleroyals/Battleroyals";
-import GameCard from "./Components/Contentfield/GameCardPage/GameCardPage";
-import GameCardSet from "./Components/Contentfield/GameCardPage/GameCardSet";
+import RpgListContainer from "./Components/Contentfield/Ganre/RPG/RpgListContainer";
+import BattleroyalsContainer from "./Components/Contentfield/Ganre/Battleroyals/BattleroyalsContainer";
+import GameCardSetContainer from "./Components/Contentfield/GameCardPage/GameCardSetContainer";
 
 
-function App(props) {
+function App() {
 
     return (
         <div className="mainWrapp">
@@ -32,12 +28,13 @@ function App(props) {
             </div>
             <div className="mainBody">
                 MainBody
-                {/* <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>*/}
-                <Route path="/ganre/RPG" render={() => <Rpg gamesList={props.state.gamesList}/>}/>
+                <Route path="/ganre/RPG" render={() =>
+                    <RpgListContainer/>}/>
+
                 <Route path="/ganre/RPG/WowClassic"
-                       render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
-                <Route path="/ganre/RPG/WowBc" render={() => <GameCardSet gamesList={props.state.gamesList.rpg}/>}/>
-                <Route path="/ganre/Battleroyals" render={() => <Battleroyals gamesList={props.state.gamesList}/>}/>
+                       render={() => <GameCardSetContainer/>}/>
+                <Route path="/ganre/RPG/WowBc" render={() => <GameCardSetContainer/>}/>
+                <Route path="/ganre/Battleroyals" render={() => <BattleroyalsContainer/>}/>
 
             </div>
             <div className="mainRighbar">

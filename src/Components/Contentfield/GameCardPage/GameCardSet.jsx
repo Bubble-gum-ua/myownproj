@@ -4,13 +4,17 @@ import GameCard from "./GameCardPage";
 
 const GameCardSet = (props) => {
 
+    let state = props.rpg.state;
 
-    let gameElement = props.gamesList.map(g => <GameCard name={g.name} avatar={g.avatar} text={g.text}/>);
     debugger;
+
+
+    let gameElement = state.rpg.map(g => <GameCard name={g.name} avatar={g.avatar} key={g.id} text={g.text}/>);
+
     return (
         <div>
             {gameElement}
-      {/*      <GameCard name={props.name} avatar={props.avatar}/>*/}
+
         </div>
     )
 }

@@ -1,17 +1,15 @@
 import React from "react";
-import GameCard from "../../GameCardPage/GameCardPage";
 import Gamegrid from "../../GameCardPage/Maingamesgrid";
 import {NavLink} from "react-router-dom";
 
 
 const Rpg = (props) => {
 
-    /* let gameElement = props.gamesList.rpg.map(g => <GameCard name={g.name} id={g.id} avatar={g.avatar}
-                                                                     text={g.text} year={g.year} pcpreferences={g.pcpreferences}/>);*/
+    let state = props.gamesnameslist;
 
-    let gameElement = props.gamesList.gamesnameslist.wowclassic.map(g =><Gamegrid name={g.name} id={g.id} avatar={g.avatar}/>);
-    let secondEl = props.gamesList.gamesnameslist.wowbc.map(s =><Gamegrid name={s.name} id={s.id} avatar={s.avatar}/>);
-    debugger;
+    let gameElement = state.wowclassic.map(g =><Gamegrid name={g.name} id={g.id} avatar={g.avatar}/>);
+    let secondEl = state.wowbc.map(s =><Gamegrid name={s.name} id={s.id} avatar={s.avatar}/>);
+
     return (
 
         <div>

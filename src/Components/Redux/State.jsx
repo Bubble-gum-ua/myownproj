@@ -1,3 +1,4 @@
+/*
 import React from "react";
 
 
@@ -80,4 +81,4 @@ let state = {
     }
 };
 
-export default state;
+export default state;*/
