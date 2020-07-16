@@ -4,6 +4,7 @@ import GameCardSet from "./GameCardSet";
 
 
 let mapStateToProps = (state) => {
+    debugger;
         return {
         rpg: state.rpg
     }

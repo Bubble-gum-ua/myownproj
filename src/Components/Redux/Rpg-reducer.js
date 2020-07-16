@@ -39,7 +39,8 @@ rpg: [
 
 ],};
 
-const rpgReducer = (state = initialstate) =>{
+const rpgReducer = (state = initialstate.rpg) =>{
+    debugger;
     return{
 state
     }

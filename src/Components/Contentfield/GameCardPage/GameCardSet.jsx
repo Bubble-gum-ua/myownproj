@@ -9,7 +9,7 @@ const GameCardSet = (props) => {
     debugger;
 
 
-    let gameElement = state.rpg.map(g => <GameCard name={g.name} avatar={g.avatar} key={g.id} text={g.text}/>);
+    let gameElement = state.map(g => <GameCard name={g.name} avatar={g.avatar} key={g.id} text={g.text}/>);
 
     return (
         <div>
