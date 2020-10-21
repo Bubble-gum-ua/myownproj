@@ -2,3 +2,19 @@
     padding: 5px;
     margin: 5px;
 }
+
+.item a:hover {
+    font-size: 25px;
+    font-weight: bold;
+    background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 5px rgba(0, 0, 1, 1); /* Параметры тени */
+    padding: 10px;
+    color: darkred;
+}
+
+.item a.active {
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+
+}

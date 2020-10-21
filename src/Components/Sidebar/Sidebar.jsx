@@ -5,20 +5,20 @@ import s from "./Sidebar.module.css"
 const Sidebar = () => {
     return (
         <nav className={s.sideBar}>
-            <div>
-                <NavLink to="/classes">Classes</NavLink>
+            <div className={`${s.item} ${s.active}`}>
+                <NavLink to="/classes" activeClassName={s.active}>Classes</NavLink>
             </div>
-            <div>
-                <NavLink to="/ganre">Ganre</NavLink>
+            <div className={`${s.item} ${s.active}`}>
+                <NavLink to="/ganre" activeClassName={s.active}>Ganre</NavLink>
             </div>
-            <div>
-                <NavLink to="/author"> Author </NavLink>
+            <div className={`${s.item} ${s.active}`}>
+                <NavLink to="/author" activeClassName={s.active}> Author </NavLink>
             </div>
-            <div>
-                <NavLink to="/country">Country</NavLink>
+            <div className={`${s.item} ${s.active}`}>
+                <NavLink to="/country" activeClassName={s.active}>Country</NavLink>
             </div>
-            <div>
-                <NavLink to="/music">Music</NavLink>
+            <div className={`${s.item} ${s.active}`}>
+                <NavLink to="/music" activeClassName={s.active}>Music</NavLink>
             </div>
         </nav>
     )
